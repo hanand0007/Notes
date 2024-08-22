@@ -8,10 +8,10 @@ Notes (Room DB Encryption using SQL Cipher)
   }
 
 •	Create or migrate your Room database to use SQLCipher:
-
-  val passphrase: ByteArray = SQLiteDatabase.getBytes("your_secure_passphrase".toCharArray())
-  val factory = SupportFactory(passphrase)
-  val db = Room.databaseBuilder(context, YourDatabase::class.java, "encrypted_db_name")
+    
+    val passphrase: ByteArray = SQLiteDatabase.getBytes("your_secure_passphrase".toCharArray())
+    val factory = SupportFactory(passphrase)
+    val db = Room.databaseBuilder(context, YourDatabase::class.java, "encrypted_db_name")
       .openHelperFactory(factory)
       .build()
 
