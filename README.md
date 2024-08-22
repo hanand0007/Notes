@@ -15,8 +15,7 @@ Notes (Room DB Encryption using SQL Cipher)
       .openHelperFactory(factory)
       .build()
 
- •	This approach encrypts the entire database file, including the schema.
- •	Or You can use Keystore Integration:
+ •	This approach encrypts the entire database file, including the schema or You can use Keystore Integration:
  
      val keyStore = KeyStore.getInstance("AndroidKeyStore").apply { load(null) } 
      val secretKey = (keyStore.getEntry("YourKeyAlias", null) as KeyStore.SecretKeyEntry).secretKey
