@@ -3,9 +3,9 @@ Notes (Room DB Encryption using SQL Cipher)
 •	How to Implement:
 •	Add the SQLCipher dependency to your build.gradle file:
 
-  dependencies {
-    implementation 'net.zetetic:android-database-sqlcipher:4.5.0'
-  }
+    dependencies {
+      implementation 'net.zetetic:android-database-sqlcipher:4.5.0'
+    }
 
 •	Create or migrate your Room database to use SQLCipher:
     
