@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //observers for live data
+        //Observers for live data
         mainViewModel.inputText.observe(this) {
             binding.saveButton.isEnabled = it.trim().isNotEmpty() && it.length > 4 && it.length < 40
         }
